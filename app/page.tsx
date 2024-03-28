@@ -1,6 +1,8 @@
 "use client";
 import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import { Meteors } from "@/components/ui/meteors";
+import Link from "next/link";
+import { useRouter } from 'next/router';
 
 export default function Home() {
   const words = [
@@ -40,11 +42,13 @@ export default function Home() {
       </p>
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button onClick={() => {
-          console.log("hi there")
-        }} type="button" className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-          Get Started
-        </button>
+        
+      <Link href="/dashboard" passHref>
+  <div className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer">
+    Dashboard
+  </div>
+</Link>
+        
       </div>
      <Meteors number={200}/>
 

@@ -49,14 +49,11 @@ export default function Dashboard() {
             </CardItem>
             <div className="flex justify-between items-center mt-20">
               
-              <CardItem
-                translateZ={20}
-                translateX={40}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-              >
-                Go to Projects
-              </CardItem>
+            <Link href="/dashboard/achievements" passHref>
+  <div className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer">
+    Projects
+  </div>
+</Link>
             </div>
           </CardBody>
         </CardContainer>
@@ -94,14 +91,11 @@ export default function Dashboard() {
             </CardItem>
             <div className="flex justify-between items-center mt-20">
              
-              <CardItem
-                translateZ={20}
-                translateX={40}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-              >
-                Go To Achievements
-              </CardItem>
+            <Link href="/dashboard/achievements" passHref>
+  <div className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer">
+    Achievements
+  </div>
+</Link>
             </div>
           </CardBody>
         </CardContainer>
@@ -138,14 +132,11 @@ export default function Dashboard() {
             </CardItem>
             <div className="flex justify-between items-center mt-20">
               
-              <CardItem
-                translateZ={20}
-                translateX={40}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-              >
-                Go to TechStack
-              </CardItem>
+              <Link href="/dashboard/techstack" passHref>
+  <div className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer">
+    Techstack
+  </div>
+</Link>
             </div>
           </CardBody>
         </CardContainer>
@@ -183,17 +174,17 @@ export default function Dashboard() {
             </CardItem>
             <div className="flex justify-between items-center mt-20">
               
-              <CardItem
-                translateZ={20}
-                translateX={40}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-              >
-                Contact me
-              </CardItem>
+            <Link href="/dashboard/contacts" passHref>
+  <div className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm flex items-center justify-center cursor-pointer">
+    Contacts
+  </div>
+</Link>
             </div>
           </CardBody>
         </CardContainer>
       </div>
       <Meteors number={400}/>
       </div>)}
+
+
+
